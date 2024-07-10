@@ -8,7 +8,7 @@ body {
     background-color: rgb(46, 14, 134);
 }
 
-.container {
+.container  {
     display: flex;
     justify-content: space-around;
 }
@@ -21,7 +21,7 @@ body {
     margin-bottom: 0px;
 }
 
-.incr-button {
+button {
     width: 50px;
     height: 50px;
     font-size: 30px;
@@ -30,20 +30,23 @@ body {
     border: solid;
     border-radius: 20%;
     border-width: 1px;
+    text-align: center;
 }
 
 .score-buttons {
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 
 #home-score-buttons {
-    display: inline;
+    display: inline-flex;
+    
 }
 
 #away-score-buttons {
-   display: inline;
+   display: inline-flex;
+   
 }
 
 #home-score {
@@ -94,7 +97,9 @@ footer {
     margin-top: 50;
 }
 
-#new-game {
-    width: 80px;
-    height: 80px;
+.new-game {
+    display: block;
+    width: 150;
+    margin-left: auto;
+    margin-right: auto;
 }
