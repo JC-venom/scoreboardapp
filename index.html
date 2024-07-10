@@ -11,6 +11,31 @@
                 <h3>AWAY</h3>
             </div>
         </div>
+      <div id="scorebox"> 
+        <div>
+            <h1 id="home-score"></h1>
+        </div>
+        <div>
+            <h1 id="away-score"></h1>
+        </div>
+      </div> 
+        <div class="score-buttons">
+          <div id="home-score-buttons">
+            <button class="incr-button" id="home-1-point" onclick="home1()">+1</button>
+            <button class="incr-button" id="home-2-point" onclick="home2()">+2</button>
+            <button class="incr-button" id="home-3-point" onclick="home3()">+3</button>
+          </div> 
+          <div id="away-score-buttons">
+            <button class="incr-button" id="away-1-point" onclick="away1()">+1</button>
+            <button class="incr-button" id="away-2-point" onclick="away2()">+2</button>
+            <button class="incr-button" id="away-3-point" onclick="away3()">+3</button>
+          </div>
+        </div>
         <script src="index.js"></script>
     </body>
+    <footer>
+      <div>
+        <button onclick="newGame()" id="new-game">RESET</button>
+      </div>
+    </footer>
 </html>
